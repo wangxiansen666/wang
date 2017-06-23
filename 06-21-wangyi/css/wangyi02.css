@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, .main {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: #3A3A3A;
+
+}
+
+a:active {
+    /*-webkit-tap-highlight-color:rgba(0,0,0,0);*/
+    outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+    a {
+        font-size: 3rem;
+    }
+
+    .nav-top-ul a {
+        font-size: 3rem;
+    }
+
+    .list a {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    a {
+        font-size: 2rem;
+    }
+
+    .nav-top-ul a {
+        font-size: 2rem;
+    }
+
+    .list a {
+        font-size: 1.75rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    a {
+        font-size: 1.7rem;
+    }
+
+    .nav-top-ul a {
+        font-size: 1.7rem;
+    }
+
+    .list a {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    a {
+        font-size: 1.5rem;
+    }
+
+    .nav-top-ul a {
+        font-size: 1.75rem;
+    }
+
+    .list a {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:280px) {
+    a {
+        font-size: 1rem;
+    }
+
+    .nav-top-ul a {
+        font-size: 1rem;
+    }
+    .list a {
+        font-size: 1rem;
+    }
+}
+
+#header, #footer {
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    background-color: #D63A2D;
+    z-index: 5;
+}
+
+#header {
+    left: 0;
+    top: 0;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    background: #35312E
+}
+
+.header-box {
+    margin: 0 auto;
+    width: 95%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mai img {
+    width: 100%;
+}
+
+.maid img {
+    width: 100%;
+}
+
+.mai {
+    width: 3rem;
+    height: 4rem;
+}
+
+.maid {
+    margin-top: 1rem;
+
+}
+
+.header-input input {
+    width: 70%;
+    height: 4rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.header-input {
+    width: 75%;
+    height: 4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.sou {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 3.5rem;
+    height: 3rem;
+}
+
+.main {
+
+}
+
+.box {
+    margin-top: 10rem;
+    margin-bottom: 0;
+}
+
+.nav-top {
+    position: fixed;
+    left: 0;
+    top: 6rem;
+    width: 100%;
+    height: 4rem;
+    background-color: #F8F8FA;
+}
+
+.nav-top-ul {
+    width: 95%;
+    margin: 0 auto;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.nav-top-ul a {
+    font-family: "微软雅黑";
+    font-weight: bold;
+    line-height: 4rem;
+    padding: 0 0.5rem;
+}
+
+.nav-top-ul li:hover {
+    border-bottom: 2px solid #D63A2D;
+}
+
+.nav-top-ul li a:hover {
+    color: #D63A2D;;
+}
+
+.active-nav {
+    border-bottom: 2px solid #D63A2D;
+}
+
+.active-nav a {
+    color: #D63A2D;
+}
+
+/*banner*/
+.banner {
+    width: 100%;
+    /*background-color: #0BC20B;*/
+}
+
+.banner img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/*list-top*/
+.list-top {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.list-quan {
+    margin-left: 5%;
+    /* width: 20%; */
+    /* height: 3.5rem; */
+    /* line-height: 3.5rem; */
+    border: 1px solid #6B6B6B;
+    border-radius: 5rem;
+    padding: 0.4rem 1rem;
+    box-sizing: border-box;
+}
+
+.list-auto {
+    display: flex;
+    font-size: 2rem;
+
+}
+
+.list-auto > li {
+    border-right: 1px solid #F3F3F5;
+    padding: 0 1rem;
+}
+
+.list-auto > li:last-child {
+    border: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.list > li {
+    width: 48%;
+}
+
+.list-img {
+    width: 100%;
+    display: block;
+    /*overflow: hidden;*/
+}
+
+.list-img img {
+    width: 100%;
+}
+
+.list-tit {
+    display: block;
+    padding: 0 0.5rem 2rem 0.5rem;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-ul img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer-ul a {
+    color: #777674;
+}
+
+.footer-ul > li {
+    margin-top: 0.5rem;
+    width: 20%;
+}
+
+.footer-ul > li.active-footer a {
+    color: #D1D2D4;
+}
